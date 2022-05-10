@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Diseño de paginas web</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="../imagenes/logo.png" alt="Logotipo Diseño Web" width="150">
+            
+        <nav class="navegador">
+            <ul class="navegador__lista">
+                <li><a class="navegador__texto" href="../index.html">Inicio</a></li>
+                <li><a class="navegador__texto" href="servicios.html">Servicios</a></li>
+                <li><a class="navegador__texto" href="nuestros_clientes.html">Nuestros Clientes</a></li>
+                <li><a class="navegador__texto" href="faq.html">Preguntas Frecuentes</a></li>
+                <li><a class="navegador__texto" href="contacto.html">Contacto</a></li>  
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main class="inicio">
+        <h2 class="contacto__titulo">¡Pedí tu presupuesto o cualquier duda que tengas sobre nuestros servicios!</h2>
+        
+        <form class="contacto__form" action="ruta" method="get o post" enctype="encriptacion">
+
+            <div>
+                <label class="contacto__form__texto" for="nombre"> Nombre Completo</label> <br>
+                <input class="contacto__form__cuadro" type="text" id="nombre" name="nombre">
+            </div>
+
+            <div>
+                <br>
+                <label class="contacto__form__texto" for="correo"> Email</label> <br>
+                <input class="contacto__form__cuadro" type="email" id="correo" name="correo">
+            </div>
+
+            <div>
+                <br>
+                <label class="contacto__form__texto" for="telefono"> Teléfono</label> <br>
+                <input class="contacto__form__cuadro" type="number" id="telefono" name="telefono">
+            </div>
+
+            <div>
+                <br>
+                <label class="contacto__form__texto" for="mensaje"> Mensaje</label> <br>
+                <textarea class="contacto__form__mensaje" id="mensaje" name="mensaje" cols="20" rows="1"></textarea>
+            </div>
+            <br>
+            <button class="contacto__boton">Enviar</button>
+        </form>
+    
+    </main>
+    <footer class="footer">
+        <img class="logo" src="../imagenes//logo.png" alt="Logotipo Diseño Web" width="120">
+        <div class="footer__parrafo__central">
+            <div class="footer__parrafo__central__contacto">
+                <img class="logo__footer" src="../imagenes/fb.png" alt="Facebook" width="80"> 
+                <img class="logo__footer" src="../imagenes//ig.png" alt="Instagram" width="90">
+                <span>
+                   Numero: +54 (011) 1234-5678 <br>
+                 Mail: contacto@desarrolloweb.com.ar
+                </span>
+            </div>
+            <span class="footer__parrafo__central__derechos">
+                Copyright © 2022 | Todos los derechos reservados
+            </span>
+        </div>
+        <ul class="footer__navegador">
+            <li><a class="footer__navegador__texto" href="../index.html">Inicio</a></li>
+            <li><a class="footer__navegador__texto" href="servicios.html">Servicios</a></li>
+            <li><a class="footer__navegador__texto" href="nuestros_clientes.html">Nuestros Clientes</a></li>
+            <li><a class="footer__navegador__texto" href="faq.html">Preguntas Frecuentes</a></li>
+            <li><a class="footer__navegador__texto" href="contacto.html">Contacto</a></li>  
+            
+        </ul>
+        
+       
+    </footer>
+</body>
+</html>
