@@ -110,6 +110,11 @@ body{
 .clientes__foto{
     width: 400px;
     height: 200px;
+    transition: transform 1s;
+}
+
+.clientes__foto:hover{
+    transform: scale(1.5);
 }
 
 .footer__parrafo__central__contacto{
