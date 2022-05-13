@@ -26,6 +26,11 @@ body{
 
 }
 
+.ul{
+    margin-bottom: 0;
+    padding: 0;
+}
+
 .logo{
     background-color: white;
     padding: 8px;
@@ -72,17 +77,14 @@ body{
 }
 
 .parrafo{
-    width: 20%;
-    font-size: 18px;
-    color: rgb(37, 37, 37);
-    padding: 90px;
-    display: inline-block;
-    text-align: center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    font-size: 20px;
 }
 
 .parrafo__titulo{
     padding: 30px;
-    font-size: 28px;
+    font-size: 24px;
     color: black;
 }
 
@@ -169,10 +171,7 @@ body{
 }
 
 .parrafo{
-    width: 60%;
     color: rgb(68, 65, 65);
-    padding: 120px;
-    line-height: 30px;
 }
 
 .servicios__titulo{
@@ -257,13 +256,46 @@ body{
     justify-content: space-between;
     gap: 5rem;
     padding: 4rem;
+    padding-left: 0;
+    transform: translate(-15%);
 
 }
 
 .faq__preguntas__titulo{
-    font-size: 24px;
-    color: black;
+    background-color: gray;
+    border-color: gray;
+    font-size: 20px;
+    color: white;
     padding: 16px;
+    outline-color: black !important;
+    outline: none;
+   
+}
+
+.faq__preguntas__titulo:hover{
+    background-color: rgb(65, 64, 64);
+    border-color:rgb(65, 64, 64) ;
+    outline-color: black !important;
+   
+}
+
+.faq__preguntas__titulo:visited{
+    background-color: rgb(65, 64, 64);
+    border-color:rgb(65, 64, 64) ;
+    outline-color: black !important;
+   
+}
+
+.faq__preguntas__titulo:active{
+    background-color: rgb(65, 64, 64);
+    border-color:rgb(65, 64, 64) ;
+    outline-color: black !important;
+   
+}
+
+.faq__preguntas__titulo:focus{
+
+    outline-color: black !important;
    
 }
 
@@ -342,10 +374,6 @@ body{
     
     }
 
-    .parrafo{
-        padding: 50px;
-    }
-
     .clientes__lista{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -377,10 +405,6 @@ body{
         justify-content: space-between;
         align-items: center;
     
-    }
-
-    .parrafo{
-        padding: 5px;
     }
     
     .footer__parrafo__central{
@@ -478,10 +502,7 @@ body{
     }
 
     .parrafo{
-        width: 80%;
-        padding: 20px;
         font-size: 12px;
-        line-height: 17px;
     }
 
     .parrafo__titulo{

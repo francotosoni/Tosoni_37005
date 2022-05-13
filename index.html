@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseño de paginas web</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -13,7 +16,7 @@
         <img class="logo" src="imagenes/logo.png" alt="Logotipo Diseño Web" width="150">
             
         <nav class="navegador">
-            <ul class="navegador__lista">
+            <ul class="navegador__lista ul">
                 <li><a class="navegador__texto" href="index.html">Inicio</a></li>
                 <li><a class="navegador__texto" href="pages/servicios.html">Servicios</a></li>
                 <li><a class="navegador__texto" href="pages/nuestros_clientes.html">Nuestros Clientes</a></li>
@@ -30,27 +33,38 @@
             <h1 class="titulo">Somos la mejor pagina de diseño web</h1>  
         </div>
 
-        <div class="inicio__parrafos">
-            <section class="parrafo">
-            <h2 class="parrafo__titulo">NOS DIFERENCIAMOS, TE DIFERENCIAMOS</h2>
-            Desarrollamos páginas web de alto impacto apuntadas a maximizar resultados. Somos especialistas en generar soluciones a medida y diseño personalizado para cada cliente <br>
-            Realmente creemos que con una estrategia web correcta, comunicación acertada y diseño creativo, tu empresa puede sacar un provecho de internet MUY superior al que imaginas posible.
-            Y QUEREMOS AYUDARTE A LOGRARLO.
-            </section>
-            
-            <section class="parrafo">
-            <h2 class="parrafo__titulo">MÁXIMA ATENCIÓN AL DETALLE</h2>
-            Para lograr el famoso efecto «wow» de nuestros clientes en internet, trabajamos el diseño web cuidando los detalles al máximo.  Seleccionamos cuidadosamente los <br>
-            elementos, los colores, la distribución, la tipografía. Cada detalle cuenta.  La luz de las fotos, contrastes, llamados a la acción… consideramos cada aspecto del diseño.
-            </section>
-            
-            <section class="parrafo">
-            <h2 class="parrafo__titulo">GENERAMOS ESTRATEGIAS EXITOSAS</h2>
-            Nos especializamos en el desarrollo, implementación y optimización de páginas web. Proveemos soluciones personalizadas para cada necesidad. Ponemos en práctica un enfoque <br>
-            estratégico de marketing que permite lograr páginas web que obtienen resultados concretos.
-            </section>
-
-        </div>
+        <div class="container">
+            <div class="row align-items-start">
+              <div class="col-12 col-md-4 parrafo">
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title parrafo__titulo">NOS DIFERENCIAMOS, TE DIFERENCIAMOS</h5>
+                      <p class="card-text">Desarrollamos páginas web de alto impacto apuntadas a maximizar resultados. Somos especialistas en generar soluciones a medida y diseño personalizado para cada cliente <br>
+                        Realmente creemos que con una estrategia web correcta, comunicación acertada y diseño creativo, tu empresa puede sacar un provecho de internet MUY superior al que imaginas posible.
+                        Y QUEREMOS AYUDARTE A LOGRARLO.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-4 parrafo">
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title parrafo__titulo">MÁXIMA ATENCIÓN AL DETALLE</h5>
+                      <p class="card-text">Para lograr el famoso efecto «wow» de nuestros clientes en internet, trabajamos el diseño web cuidando los detalles al máximo.  Seleccionamos cuidadosamente los <br>
+                        elementos, los colores, la distribución, la tipografía. Cada detalle cuenta.  La luz de las fotos, contrastes, llamados a la acción… consideramos cada aspecto del diseño.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-4 parrafo">
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title parrafo__titulo">GENERAMOS ESTRATEGIAS EXITOSAS</h5>
+                      <p class="card-text">Nos especializamos en el desarrollo, implementación y optimización de páginas web. Proveemos soluciones personalizadas para cada necesidad. Ponemos en práctica un enfoque <br>
+                        estratégico de marketing que permite lograr páginas web que obtienen resultados concretos.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
         
     </main>
     <footer class="footer">
@@ -79,6 +93,7 @@
         
        
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
 </body>
 </html>

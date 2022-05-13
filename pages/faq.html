@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas Frecuentes - Diseño de paginas web</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
@@ -26,25 +29,62 @@
 
     <main class="inicio">
         <h2 class="faq__titulo">Preguntas Frecuentes</h2>
-        
-        <ul class="faq__preguntas">
-            <li class="faq__preguntas__parrafo"><h3 class="faq__preguntas__titulo">¿Quienes somos?</h3>
-            &nbsp; Somos un estudio de diseño multimedial dedicado a brindar soluciones integrales a empresas enfocadas en ampliar su horizonte y atraer nuevos clientes.
-            </li>
-            <li class="faq__preguntas__parrafo"><h3 class="faq__preguntas__titulo">¿Como es nuestra trayectoria?</h3>
-            &nbsp; Nuestra trayectoria es muy amplia: siete años de experiencia nos respaldan. A lo largo de este camino no han faltado dificultades e imponderables, pero todo <br>
-            &nbsp; eso nos ha hecho crecer y dar lo mejor de nosotros mismos. Por eso, hoy nos enorgullece saber que tenemos más de 600 proyectos en línea, que nuestra familia de clientes <br>
-            &nbsp; está en pleno crecimiento, y que nosotros seguimos adelante con el mismo compromiso de siempre, trabajando las 24 horas del día, los 365 días del año.
-            </li>
-            <li class="faq__preguntas__parrafo" ><h3 class="faq__preguntas__titulo">¿Que seguridad podemos ofrecerte?</h3>
-            &nbsp;Dado que la seguridad es una de nuestras mayores preocupaciones, tanto en nuestro sitio como en nuestro correo, toda la información que nos compartís queda cifrada, y por <br>
-            &nbsp;lo tanto, absolutamente protegida. ¡Confiá en nosotros!
-            </li>
-            <li class="faq__preguntas__parrafo"><h3 class="faq__preguntas__titulo">¿Puedo contratarlos si no soy de Argentina?</h3>
-            &nbsp; Por supuesto, trabajamos para cualquier parte del mundo
-            </li>
-            
-        </ul>
+
+        <div class="container faq__preguntas">
+              <div class="col-12">
+                <p>
+                    <a class="btn btn-primary faq__preguntas__titulo" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+                        ¿Quienes somos?
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapse1">
+                    <div class="card card-body faq__preguntas__parrafo">
+                        Somos un estudio de diseño multimedial dedicado a brindar soluciones integrales a empresas enfocadas en ampliar su horizonte y atraer nuevos clientes.
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col-12">
+                <p>
+                    <a class="btn btn-primary faq__preguntas__titulo" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+                        ¿Como es nuestra trayectoria?
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapse2">
+                    <div class="card card-body faq__preguntas__parrafo">
+                        Nuestra trayectoria es muy amplia: siete años de experiencia nos respaldan. A lo largo de este camino no han faltado dificultades e imponderables, pero todo
+                        eso nos ha hecho crecer y dar lo mejor de nosotros mismos. Por eso, hoy nos enorgullece saber que tenemos más de 600 proyectos en línea, que nuestra familia de clientes
+                        está en pleno crecimiento, y que nosotros seguimos adelante con el mismo compromiso de siempre, trabajando las 24 horas del día, los 365 días del año.
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col-12">
+                <p>
+                    <a class="btn btn-primary faq__preguntas__titulo" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+                        ¿Que seguridad podemos ofrecerte?
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapse3">
+                    <div class="card card-body faq__preguntas__parrafo">
+                        Dado que la seguridad es una de nuestras mayores preocupaciones, tanto en nuestro sitio como en nuestro correo, toda la información que nos compartís queda cifrada, y por
+                        lo tanto, absolutamente protegida. ¡Confiá en nosotros!
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col-12">
+                <p>
+                    <a class="btn btn-primary faq__preguntas__titulo" data-bs-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4">
+                        ¿Puedo contratarlos si no soy de Argentina?
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapse4">
+                    <div class="card card-body faq__preguntas__parrafo">
+                        Por supuesto, trabajamos para cualquier parte del mundo
+                    </div>
+                  </div>
+              </div>
     
     </main>
 
@@ -74,6 +114,9 @@
         
        
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
     
 </body>
 </html>
