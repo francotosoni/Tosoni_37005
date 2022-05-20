@@ -1,0 +1,62 @@
+.faq__titulo{
+    background-color: $color_titulo_fondo;
+    color: $color_titulo_letra;
+    font-size: 32px;
+    text-align: center;
+    padding: 70px;
+}
+
+.faq__preguntas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 4rem;
+
+    &__titulo{
+        background-color: $color_boton_fondo;
+        border-color: $color_boton_fondo;
+        font-size: 20px;
+        color: $color_boton_letra;
+        padding: 16px;
+        outline-color: black !important;
+        outline: none;
+
+        &:hover{
+            background-color: $color_boton_fondo_hover;
+            border-color:$color_boton_fondo_hover ;
+            outline-color: black !important;
+           
+        }
+
+        &:visited{
+            background-color: $color_boton_fondo_hover;
+            border-color:$color_boton_fondo_hover ;
+            outline-color: black !important;
+           
+        }
+
+        &:active{
+            background-color: $color_boton_fondo_hover;
+            border-color:$color_boton_fondo_hover ;
+            outline-color: black !important;
+           
+        }
+
+        &:focus{
+
+            outline-color: black !important;
+           
+        }
+       
+    }
+
+    &__parrafo{
+        list-style: none;
+        font-size: 18px;
+        color: $color_boton_parrafo;
+        line-height: 26px;
+        text-align: left;
+    
+    }
+}

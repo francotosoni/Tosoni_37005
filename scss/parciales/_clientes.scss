@@ -1,0 +1,40 @@
+.clientes__titulo{
+    background-color: $color_titulo_fondo;
+    color: $color_titulo_letra;
+    font-size: 32px;
+    text-align: center;
+    padding: 70px;
+}
+
+.clientes__lista{
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-between;
+    align-content: space-between;
+    column-gap: 10px;
+    row-gap: 80px;
+    margin: 10rem;
+}
+
+.clientes__enlace{
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.clientes__foto{
+    width: 400px;
+    height: 200px;
+    transition: transform 1s;
+
+    &:hover{
+        transform: scale(1.5);
+    }
+}

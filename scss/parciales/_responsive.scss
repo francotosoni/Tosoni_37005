@@ -1,0 +1,305 @@
+@media screen and (max-width: 1750px){
+    .inicio__fondo__titulo{
+        padding: 150px;
+    
+    }
+    
+    .titulo{
+        font-size: 40px;
+        color: white;
+        transform: translate(0,-120px);
+    
+    }
+
+    .inicio__parrafos{
+        margin: 1px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+
+    .clientes__lista{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+    }
+
+}
+
+@media screen and (max-width: 1023px){
+    .inicio__fondo__titulo{
+        padding: 150px;
+    
+    }
+    
+    .header {
+        flex-direction: column;
+    }
+
+    .titulo{
+        font-size: 30px;
+        color: black;
+        transform: translate(0,140px);
+    
+    }
+
+    .inicio__parrafos{
+        margin: 1px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    .footer__parrafo__central{
+        font-size: 14px;
+        gap: 20px;
+
+        &__derechos{
+            font-size: 14px;
+        }
+
+    }
+    
+    .footer__navegador{
+        gap: 5px;
+        padding: 2px;
+        margin: 1rem;
+
+        &__texto{
+            font-size: 14px;
+        }
+    
+    }
+    
+    .servicios__titulo{
+        font-size: 25px;
+        text-align: center;
+        padding: 70px;
+        padding-top: 150px;
+    }
+
+    .clientes__titulo{
+        font-size: 25px;
+        text-align: center;
+        padding: 70px;
+        padding-top: 150px;
+
+    }
+
+    .faq__titulo{
+        font-size: 25px;
+        text-align: center;
+        padding: 70px;
+        padding-top: 150px;
+    }
+
+    .contacto__titulo{
+        font-size: 25px;
+        text-align: center;
+        padding: 70px;
+        padding-top: 150px;
+    }
+
+    .servicios__paquetes{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10rem;
+        margin: 15rem;
+    }
+
+    .clientes__lista{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+}
+
+@media screen and (max-width: 650px){
+
+    .clientes__foto{
+        width: 200px;
+        height: 100px;    
+        &:hover{
+            transform: scale(1.25);
+        }
+    }
+
+    .inicio__fondo__titulo{
+        padding: 100px;
+        transform: translate(0,80px);
+        margin-bottom: 5rem;
+    
+    }
+
+    .logo__footer{
+        width: 40px;
+        padding: 0px;
+
+    }
+    
+    .header {
+        flex-direction: row;
+        margin-bottom: 0rem;
+    }
+
+    .titulo{
+        width:100%;
+        font-size: 18px;
+        transform: translate(0,90px);
+    
+    }
+
+    .inicio__parrafos{
+        padding-top: 100px;
+    
+    }
+
+    .parrafo{
+        padding-left: 3rem;
+        padding-right: 1rem;
+        font-size: 12px;
+
+        &__titulo{
+            font-size: 16px;
+            line-height: 22px;
+    
+        }
+    }
+
+    .navegador__texto{
+        font-size: 14px;
+    }
+
+    .footer{
+        flex-direction: column;
+
+        &__navegador{
+            gap: 15px;
+            padding: 2px;
+            margin: 16px;
+            flex-direction: row;
+    
+            &__texto{
+                font-size: 10px;
+            }
+        
+        }
+
+        &__parrafo__central{
+            font-size: 10px;
+            gap: 5px;
+    
+            &__derechos{
+                font-size: 9px;
+            }
+    
+        }
+    }
+
+    .servicios__titulo{
+        margin-top: 5rem;
+        font-size: 18px;
+
+    }
+
+    .clientes__titulo{
+        margin-top: 5rem;
+        font-size: 18px;
+
+    }
+
+    .faq__titulo{
+        margin-top: 5rem;
+        font-size: 18px;
+
+    }
+
+    .contacto__titulo{
+        margin-top: 5rem;
+        font-size: 18px;
+
+    }
+
+    .servicios__paquetes{
+        align-items: center;
+        gap: 4rem;
+        margin: 2rem;
+
+        &__foto{
+            width: 125px;
+            border-radius: 32px;
+            transform: translate(24px);
+        }
+    
+        &__titulo{
+    
+            font-size: 16px;
+    
+        }
+        
+        &__descripcion{
+            font-size: 12px;
+            line-height: 25px;
+    
+        }
+    }
+
+    .clientes__lista{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        transform: translate(-70px);
+
+    }
+
+    .clientes__enlace{
+        font-size: 12px;
+        width: 140px;
+    
+    }
+
+    .navegador__lista{
+        flex-direction: column;
+        gap: 5px;
+    
+    }
+
+    .faq__preguntas__parrafo{
+        font-size: 12px;
+        line-height: 16px;
+        width: 90%;
+    
+    }
+    
+    .faq__preguntas__titulo{
+        font-size: 18px;
+        width: 200px;
+    }
+    
+    .contacto__form__texto{
+        font-size: 14px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .contacto__form__cuadro{
+        padding: 5px;
+        padding-right: 60px;
+    }
+    
+    .contacto__form__mensaje{
+        padding: 40px;
+        padding-right: 40px;
+    }
+    
+    .contacto__boton{
+        padding: 10px 30px;
+        font-size: 14px;
+        margin: 2px 1px;
+        border-radius: 2px;
+        
+    }
+
+}
