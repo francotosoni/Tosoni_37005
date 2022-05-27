@@ -12,10 +12,7 @@
 
     &__parrafos{
         margin: 20rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: top;
+        @include generarFlex(row, space-between, top);
     
     }
 }

@@ -4,8 +4,7 @@
     &__lista{
         margin-bottom: 0;
         padding: 0;
-        display: flex;
-        justify-content: space-between;
+        @include generarFlex(row, space-between, center);
         list-style: none;
         gap: 45px;
     

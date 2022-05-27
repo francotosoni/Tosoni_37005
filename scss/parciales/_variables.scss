@@ -9,3 +9,11 @@ $color_boton_letra: white;
 $color_boton_parrafo: rgb(58, 57, 57);
 
 $color_parrafo:rgb(58, 57, 57);
+
+@mixin generarFlex($direccion, $eje-principal, $eje-secundario) {
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $eje-principal;
+    align-items: $eje-secundario;
+    
+}
