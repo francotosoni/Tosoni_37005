@@ -30,7 +30,7 @@
 }
 
 .servicios__paquete_individual{
-    @include generarFlex(column, center, center);
+    @include generarFlex(column, start, center);
 
 }
 .servicios__titulo{

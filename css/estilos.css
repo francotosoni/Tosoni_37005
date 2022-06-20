@@ -5,9 +5,14 @@
   box-sizing: border-box;
 }
 
+.logo {
+  width: 150px;
+}
+
 body {
   background-color: #c9c6c6;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow: scroll;
 }
 
 .titulo {
@@ -20,8 +25,8 @@ body {
 .parrafo {
   background-color: #c9c6c6;
   color: #3a3939;
-  padding-top: 300px;
-  padding-bottom: 300px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   padding-left: 10rem;
   padding-right: 0rem;
   width: 90%;
@@ -33,6 +38,11 @@ body {
   color: black;
   padding: 20px;
   line-height: 40px;
+}
+
+.parrafo__segundo {
+  padding: 3rem 8rem;
+  min-height: 276px;
 }
 
 .btn-primary {
@@ -118,33 +128,44 @@ body {
 .contacto__form__texto {
   font-size: 18px;
   color: black;
+  padding-top: 20px;
   padding-bottom: 10px;
-  margin-bottom: 10px;
 }
 
 .contacto__form__cuadro {
   padding: 5px;
-  padding-right: 220px;
+  border: 0;
+  border-radius: 5px;
+  padding-right: 300px;
 }
 
 .contacto__form__mensaje {
-  padding: 60px;
-  padding-right: 175px;
+  padding: 5px;
+  border: 0;
+  border-radius: 5px;
+  padding-right: 329px;
+  padding-bottom: 150px;
 }
 
 .contacto__boton {
   padding: 20px 60px;
   font-size: 22px;
   background-color: white;
-  border: none;
+  border: 0;
   text-decoration: none;
-  margin: 4px 2px;
+  margin: 60px 20px 2px 0px;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 10px;
   text-align: center;
-  border-width: 1px;
-  border-style: solid;
-  border-color: -internal-light-dark(#767676, #858585);
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .faq__titulo {
@@ -159,8 +180,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 5rem;
   padding: 4rem;
+  padding-left: 1rem;
 }
 
 .faq__preguntas__titulo {
@@ -201,6 +224,10 @@ body {
   color: #3a3939;
   line-height: 26px;
   text-align: left;
+}
+
+.container {
+  margin-left: 5rem;
 }
 
 .footer {
@@ -351,7 +378,7 @@ body {
 .servicios__paquete_individual {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
 
@@ -383,6 +410,19 @@ body {
   .clientes__lista {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .servicios__paquetes {
+    margin: 15rem 3rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .clientes__lista {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
 
@@ -443,6 +483,10 @@ body {
     padding: 70px;
     padding-top: 150px;
   }
+  .parrafo__segundo {
+    padding: 3rem 0rem;
+    padding-right: 4rem;
+  }
   .servicios__paquetes {
     flex-direction: column;
     justify-content: space-between;
@@ -450,13 +494,23 @@ body {
     gap: 10rem;
     margin: 15rem;
   }
-  .clientes__lista {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
 }
 
 @media screen and (max-width: 650px) {
+  .container {
+    margin-left: 1rem;
+  }
+  .col-12 {
+    max-width: 350px;
+  }
+  .faq__preguntas {
+    padding: 4rem 0;
+    max-width: 350px;
+    padding-right: 10px;
+  }
+  .parrafo__segundo {
+    padding: 3rem 2rem;
+  }
   .clientes__foto {
     width: 200px;
     height: 100px;
@@ -540,7 +594,6 @@ body {
   .servicios__paquetes__foto {
     width: 125px;
     border-radius: 32px;
-    transform: translate(24px);
   }
   .servicios__paquetes__titulo {
     font-size: 16px;
@@ -548,11 +601,13 @@ body {
   .servicios__paquetes__descripcion {
     font-size: 12px;
     line-height: 25px;
+    max-width: 220px;
   }
   .clientes__lista {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    transform: translate(-70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 120px;
   }
   .clientes__enlace {
     font-size: 12px;
@@ -565,11 +620,12 @@ body {
   .faq__preguntas__parrafo {
     font-size: 12px;
     line-height: 16px;
-    width: 90%;
+    max-width: 350px;
+    width: 100%;
   }
   .faq__preguntas__titulo {
-    font-size: 18px;
-    width: 200px;
+    font-size: 16px;
+    width: 150px;
   }
   .contacto__form__texto {
     font-size: 14px;
@@ -589,6 +645,30 @@ body {
     font-size: 14px;
     margin: 2px 1px;
     border-radius: 2px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .logo {
+    width: 70px;
+    padding: 8px 0;
+  }
+  .faq__preguntas__parrafo {
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 240px;
+    width: 100%;
+  }
+  .col-12 {
+    max-width: 260px;
+  }
+  .faq__preguntas {
+    padding: 4rem 0;
+    max-width: 260px;
+    padding-right: 10px;
+  }
+  .contacto__form {
+    padding-left: 1rem;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

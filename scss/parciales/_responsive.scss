@@ -27,6 +27,23 @@
 
 }
 
+@media screen and (max-width: 1500px){
+
+    .servicios__paquetes{
+        margin: 15rem 3rem;
+    }
+}
+
+@media screen and (max-width: 1200px){
+.clientes__lista{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+}
+
+}
+
+
 @media screen and (max-width: 1023px){
     .inicio__fondo__titulo{
         padding: 150px;
@@ -102,6 +119,11 @@
         padding-top: 150px;
     }
 
+    .parrafo__segundo{
+        padding: 3rem 0rem;
+        padding-right: 4rem;
+    }
+
     .servicios__paquetes{
         flex-direction: column;
         justify-content: space-between;
@@ -109,15 +131,26 @@
         gap: 10rem;
         margin: 15rem;
     }
-
-    .clientes__lista{
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-
-    }
 }
 
 @media screen and (max-width: 650px){
+
+    .container{
+        margin-left: 1rem;
+    }
+    .col-12{
+        max-width: 350px;
+    }
+
+    .faq__preguntas{
+        padding: 4rem 0;
+        max-width: 350px;
+        padding-right: 10px;
+    }
+
+    .parrafo__segundo{
+        padding: 3rem 2rem;
+    }
 
     .clientes__foto{
         width: 200px;
@@ -231,7 +264,6 @@
         &__foto{
             width: 125px;
             border-radius: 32px;
-            transform: translate(24px);
         }
     
         &__titulo{
@@ -243,14 +275,16 @@
         &__descripcion{
             font-size: 12px;
             line-height: 25px;
+            max-width: 220px;
     
         }
     }
 
     .clientes__lista{
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        transform: translate(-70px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 120px;
 
     }
 
@@ -269,13 +303,14 @@
     .faq__preguntas__parrafo{
         font-size: 12px;
         line-height: 16px;
-        width: 90%;
+        max-width: 350px;
+        width: 100%;
     
     }
     
     .faq__preguntas__titulo{
-        font-size: 18px;
-        width: 200px;
+        font-size: 16px;
+        width: 150px;
     }
     
     .contacto__form__texto{
@@ -300,6 +335,37 @@
         margin: 2px 1px;
         border-radius: 2px;
         
+    }
+
+}
+
+@media screen and (max-width: 370px){
+
+    .logo{
+        width: 70px;
+        padding: 8px 0;
+    }
+
+    .faq__preguntas__parrafo{
+        font-size: 12px;
+        line-height: 16px;
+        max-width: 240px;
+        width: 100%;
+    
+    }
+
+    .col-12{
+        max-width: 260px;
+    }
+
+    .faq__preguntas{
+        padding: 4rem 0;
+        max-width: 260px;
+        padding-right: 10px;
+    }
+
+    .contacto__form{
+        padding-left: 1rem;
     }
 
 }
